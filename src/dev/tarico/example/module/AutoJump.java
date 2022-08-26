@@ -10,7 +10,9 @@ public class AutoJump extends PluginModule {
 
     @Override
     public void onTick() {
+        // 判断玩家是否可以跳跃
         if(player.canJump())
+            // 玩家跳跃
             player.jump();
     }
 }

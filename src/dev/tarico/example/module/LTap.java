@@ -13,7 +13,9 @@ public class LTap extends PluginModule {
 
     @Override
     public void onKey() {
+        // 判断L键是否按下
        if(gameSetting.isKeyDown(Keyboard.KEY_L))
+           // 玩家发送随机辱骂信息
             player.sendChatMessage(AbuseUtil.getL());
     }
 }

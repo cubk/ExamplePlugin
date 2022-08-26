@@ -15,10 +15,14 @@ public class CommandName extends PluginCommand {
 
     @Override
     public void onExecute(String[] strings) {
+        // 获取Toolkit
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         Transferable trans;
+        // 获取玩家名
         trans = new StringSelection(player.getName());
+        // 复制到剪切板
         clipboard.setContents(trans, null);
+        // 发送Copy IGN Success消息
         player.addChatMessage("Copy IGN Success.");
     }
 }

@@ -11,6 +11,7 @@ public class Main implements Plugin {
 
     @Override
     public void onLoad() {
+        // 注册模块和命令
         PluginAPI.commandManager.registerCommand(new CommandName());
         PluginAPI.moduleManager.registerModule(new AutoJump());
         PluginAPI.moduleManager.registerModule(new ForceSprint());
@@ -19,6 +20,7 @@ public class Main implements Plugin {
 
     @Override
     public void onUnload() {
+        // 退出事件
         System.out.println("GoodBye!");
     }
 }
