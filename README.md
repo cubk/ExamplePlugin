@@ -1,6 +1,7 @@
 # Tarico API 文档
 ## 关于tarico api
 我们正在积极的开发tarico客户端的API，用于创建更多tarico客户端的模块和命令，如果您认为tarico客户端的API缺少您需要的功能，请发起issue。
+[查看完整Java文档](https://cubk.github.io/ExamplePlugin/)
 
 ## 功能
 ### 已经实现：
@@ -59,13 +60,13 @@ public class Main implements Plugin {
 
     @Override
     public void onLoad() {
-		//此处执行初始化插件操作，在客户端初始化时执行
-		System.out.println("Hello world!");
+	//此处执行初始化插件操作，在客户端初始化时执行
+	System.out.println("Hello world!");
     }
 
     @Override
     public void onUnload() {
-		//此处执行在插件禁用时的操作
+	//此处执行在插件禁用时的操作
         System.out.println("GoodBye!");
     }
 }
@@ -75,23 +76,22 @@ public class Main implements Plugin {
 目前TaricoAPI针对Module(模块)提供了四个Event，在Module内Override这些方法即可实现客户端功能
 ```java
 	// 每个Client Tick调用，适用于Sprint等功能
-    public void onTick() {
-    }
+    	public void onTick() {
+    	}
 
 	// 客户端渲染2D视觉时调用，适用于渲染2D视觉（例如HUD）
-    public void onRender2D(float partialTicks) {
-    }
+    	public void onRender2D(float partialTicks) {
+    	}
 	
 	// 客户端渲染3D视觉时调用，适用于渲染3D视觉（例如ESP、NameTag）
-    public void onRender3D(float partialTicks) {
-    }
+    	public void onRender3D(float partialTicks) {
+    	}
 
 	// 客户端玩家实体更新时调用
-    public void onUpdate(float yaw, float pitch, double y, boolean onGround) {
-    }
+    	public void onUpdate(float yaw, float pitch, double y, boolean onGround) {
+    	}
 
 	// 键盘输入时调用
-    public void onKey() {
-    }
+    	public void onKey() {
+    	}
 ```
-
