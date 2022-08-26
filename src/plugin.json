@@ -1,0 +1,5 @@
+{
+  "main": "dev.tarico.example.Main",
+  "name": "Example Plugin",
+  "version": "1.0.0"
+}
