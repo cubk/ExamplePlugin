@@ -1,6 +1,7 @@
 # Tarico API 文档
 ## 关于tarico api
 我们正在积极的开发tarico客户端的API，用于创建更多tarico客户端的模块和命令，如果您认为tarico客户端的API缺少您需要的功能，请发起issue。
+[查看完整Java文档](https://cubk.github.io/ExamplePlugin/)
 
 ## 功能
 ### 已经实现：
