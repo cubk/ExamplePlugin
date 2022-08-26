@@ -2,6 +2,17 @@
 ## 关于tarico api
 我们正在积极的开发tarico客户端的API，用于创建更多tarico客户端的模块和命令，如果您认为tarico客户端的API缺少您需要的功能，请发起issue。
 
+## 功能
+### 已经实现：
+- 基本的模块与命令
+- 基本的游戏内操作访问
+- 输入输出
+
+### 即将实现
+- 高级数据包操作
+- 完全游戏Class控制
+- Gui与HUD
+
 ## tarico插件开发
 ### 创建工作区
 1. 打开您的IDE比如eclipse或者intelliJ
